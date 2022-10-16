@@ -37,18 +37,17 @@ int main()
 	cout << "F1: " << f1;
 	cout << "F2: " << f2;
 	cout << "F3: " << f3;
-	cout << "F4: " << f4;                                                                                                                                             f1.Reduce(); f2.Reduce(); f3.Reduce();
-
-	f4 = f1 + f2;                                                                                                                                                     f4.Reduce();
+	cout << "F4: " << f4;                                                                                                                                             
+	f4 = f1 + f2;                                                                                                                                                     
 	cout << endl << "Addition of f1 & f2: " << f4;
 
-	f4 = f1 - f2;                                                                                                                                                     f4.Reduce();
+	f4 = f1 - f2;                                                                                                                                                     
 	cout << endl << "Subtraction of f1 & f2: " << f4;
 
-	f4 = f1 * f2;                                                                                                                                                     f4.Reduce();
+	f4 = f1 * f2;                                                                                                                                                    
 	cout << endl << "Multiplication of f1 & f2: " << f4;
 
-	f4 = f1 / f2;                                                                                                                                                     f4.Reduce();
+	f4 = f1 / f2;                                                                                                                                                     
 	cout << endl << "Division of f1 & f2: " << f4 << endl;
 
 	f4.setNumerator(76);
