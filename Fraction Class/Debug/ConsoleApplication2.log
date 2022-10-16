@@ -1,0 +1,5 @@
+﻿  Fraction.cpp
+E:\New folder (2)\Fraction Class\ConsoleApplication2\Fraction.h(12,9): warning C4101: 'gcd': unreferenced local variable
+E:\New folder (2)\Fraction Class\ConsoleApplication2\Fraction.cpp(157,14): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+E:\New folder (2)\Fraction Class\ConsoleApplication2\Fraction.cpp(158,14): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  ConsoleApplication2.vcxproj -> E:\New folder (2)\Fraction Class\ConsoleApplication2\Debug\ConsoleApplication2.exe
