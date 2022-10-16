@@ -1,7 +1,0 @@
-﻿  ConsoleApplication6.cpp
-E:\New folder (2)\Semester 2\Complex Numbers Class\ConsoleApplication6.cpp(35,24): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-E:\New folder (2)\Semester 2\Complex Numbers Class\ConsoleApplication6.cpp(25): warning C4172: returning address of local variable or temporary: c3
-E:\New folder (2)\Semester 2\Complex Numbers Class\ConsoleApplication6.cpp(18): warning C4172: returning address of local variable or temporary: c3
-E:\New folder (2)\Semester 2\Complex Numbers Class\ConsoleApplication6.cpp(38): warning C4172: returning address of local variable or temporary: c3
-E:\New folder (2)\Semester 2\Complex Numbers Class\ConsoleApplication6.cpp(11): warning C4172: returning address of local variable or temporary: c3
-  ConsoleApplication6.vcxproj -> E:\New folder (2)\Semester 2\Complex Numbers Class\Debug\ConsoleApplication6.exe
