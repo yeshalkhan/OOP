@@ -6,6 +6,7 @@
 using namespace std;
 ostream& operator<<(ostream& outObj, Fraction& f)
 {
+	f.Reduce();
 	outObj << f.num << "/" << f.den << endl;
 	return outObj;
 }
