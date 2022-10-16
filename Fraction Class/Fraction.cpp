@@ -1,10 +1,10 @@
 #include "Fraction.h"
-Fraction::Fraction() // Initialize data members to default values. Remember denominator must not be zero.
+Fraction::Fraction() // default  constructor
 {
 	num = 0;
 	den = 1;
 }
-Fraction::Fraction(int a_nmrator, int a_dnmnator) // Initialize data members with parameter values. 
+Fraction::Fraction(int a_nmrator, int a_dnmnator) // parametrized constructor 
 {
 	num = a_nmrator;
 	den = a_dnmnator;
@@ -14,7 +14,7 @@ Fraction::Fraction(Fraction& a_Frac) // copy constructor.
 	num = a_Frac.num;
 	den = a_Frac.den;
 }
-Fraction::~Fraction() // Destructor should display message “Object is destroyed”.
+Fraction::~Fraction() // Destructor 
 {
 	//cout << "Object is destroyed" << endl;
 }
@@ -68,7 +68,7 @@ Fraction Fraction::operator+(const Fraction& f2) // overload binary + operator.
 	}
 	return f3;
 }
-Fraction Fraction::operator-(const Fraction& f2) // overload binary – operator.
+Fraction Fraction::operator-(const Fraction& f2) // overload binary â€“ operator.
 {
 	Fraction f3;
 	if (den == f2.den)
@@ -90,7 +90,7 @@ Fraction Fraction::operator*(const Fraction& f) // overload binary * operator.
 	f3.den = den * f.den;
 	return f3;
 }
-Fraction Fraction::operator/(const Fraction& f)
+Fraction Fraction::operator/(const Fraction& f) // overload binary / operator
 {
 	Fraction f3;
 	f3.num = num * f.den;
@@ -99,10 +99,7 @@ Fraction Fraction::operator/(const Fraction& f)
 }
 bool Fraction::operator==(const Fraction& f) // overload relational == operator
 {
-	if (num == f.num && den == f.den)
-		return true;
-	else 
-		return false;
+	return (num == f.num && den == f.den);
 }
 bool Fraction::operator<(const Fraction& f) // overload relational < operator.
 {
@@ -110,16 +107,9 @@ bool Fraction::operator<(const Fraction& f) // overload relational < operator.
 }
 bool Fraction::operator!=(const Fraction& f) // overload relational != operator
 {
-	if (num == f.num && den != f.den)
-		return true;
-	else if (num != f.num && den == f.den)
-		return true;
-	else if (num != f.num && den != f.den)
-		return true;
-	else
-		return false;
+	return (!(num == f.num && den == f.den));
 }
-Fraction Fraction::operator-() // overload unary – operator. 
+Fraction Fraction::operator-() // overload unary â€“ operator. 
 {
 	Fraction f2;
 	f2.num = (-1)*num;
@@ -128,13 +118,13 @@ Fraction Fraction::operator-() // overload unary – operator.
 }
 Fraction& Fraction::operator++() // overload pre-increment operator.
 {
-	num = (den * 1) + num;
+	num = den + num;
 	return *this;
 }
 Fraction Fraction::operator++(int) // overload post-increment operator.
 {
 	Fraction temp(*this);
-	num = (den * 1) + num;
+	num = den + num;
 	return temp;
 }
 Fraction Fraction::operator+=(const Fraction& f) // overload combined operator +=
