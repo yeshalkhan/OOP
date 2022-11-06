@@ -9,8 +9,9 @@ private:
 		 int den; // Denominator of the fractional part. This must be non-zero 
 		 int gcd() // compute and return the GCD of given numbers.
 		 {
-			 int gcd;
-			 for (int i = 10; i>=2; i--)
+			 int max;
+			 num > den ? max = num : max = den;
+			 for (int i = max / 2; i>=2; i--)
 			 {
 				 if (den % i == 0 && num % i == 0)
 					 return i;
@@ -20,20 +21,20 @@ public:
 	    Fraction(); // Initialize data members to default values. Remember denominator must not be zero.
 		Fraction(int a_nmrator, int a_dnmnator); // Initialize data members with parameter values. 
 		Fraction(Fraction& a_Frac); // copy constructor.
-		~Fraction(); // Destructor should display message ìObject is destroyedî.
+		~Fraction(); // Destructor should display message ‚ÄúObject is destroyed‚Äù.
 		void setDenominator(int a_dnmnator);
 		void setNumerator(int a_nmrator);
 		int getDenominator() const;
 		int getNumerator()const;
 		double reduce();
 		Fraction operator+(const Fraction&); // overload binary + operator.
-		Fraction operator-(const Fraction&); // overload binary ñ operator.
+		Fraction operator-(const Fraction&); // overload binary ‚Äì operator.
 		Fraction operator*(const Fraction&); // overload binary * operator.
 		Fraction operator/(const Fraction&); // overload binary / operator.
 		bool operator==(const Fraction& ); // overload relational == operator
 		bool operator<(const Fraction& ); // overload relational < operator.
 		bool operator!=(const Fraction& ); // overload relational != operator
-		Fraction operator-(); // overload unary ñ operator. 
+		Fraction operator-(); // overload unary ‚Äì operator. 
 		Fraction& operator++(); // overload pre-increment operator.
 		Fraction operator++(int); // overload post-increment operator.
 		friend ostream& operator<<(ostream&, Fraction&); // overload << operator.
