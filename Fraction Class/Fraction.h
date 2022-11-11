@@ -9,9 +9,9 @@ private:
 		 int den; // Denominator of the fractional part. This must be non-zero 
 		 int gcd() // compute and return the GCD of given numbers.
 		 {
-			 int max;
-			 num > den ? max = num : max = den;
-			 for (int i = max / 2; i>=2; i--)
+			 int min;
+			 num < den ? min = num : min = den;
+			 for (int i = min / 2; i >= 1; i--)
 			 {
 				 if (den % i == 0 && num % i == 0)
 					 return i;
